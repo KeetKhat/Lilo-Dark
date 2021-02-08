@@ -1,0 +1,135 @@
+/* ==UserStyle==
+@name           Lilo dark
+@namespace      github.com/keetkhat
+@version        0.0.1
+@description    Thème sombre pour Lilo parce que les thèmes sombres c'est bien
+@author         KeetKhat
+@license        GPL-3.0
+@preprocessor   less
+@homepageURL    https://github.com/KeetKhat/Lilo-Dark
+@supportURL     https://github.com/KeetKhat/Lilo-Dark/issues
+@updateURL      https://github.com/KeetKhat/Lilo-Dark/raw/main/lilo-dark.user.css
+==/UserStyle== */
+@-moz-document domain("search.lilo.org") {
+    
+    /* ============== */
+    /* Variables LESS */
+    /* ============== */
+    
+    @primary-color: #000;
+    @secondary-color: #0B0B0B;
+    @text: #FFF;
+    @links_special_state: #808080;
+    
+    
+    
+    
+    
+    /* =================== */
+    /* ÉLÉMENTS PRINCIPAUX */
+    /* =================== */
+
+    /* Couleur principale */
+    .dropdown-menu, #drop-menu, footer, .main-content .lilo-search .lilo__search-form .form-search .form-control, #home-search-bar__autocomplete ul, #projects .bg-light, #sidebar
+    {
+        background-color: @primary-color !important;
+    }
+    
+    /* Couleur secondaire (Passage du curseur par ex) */
+    body, .main-footer .footer-items .dropdown-menu .dropdown-item:hover, .notif:hover, #projects .bg-light:hover, .main-content .navbar-search .form-search .form-control, #lilo-search, .bg-white
+    {
+        background-color: @secondary-color !important;
+    }
+    
+    /* Bordure conteneur auto-complétion et panneau Wikipédia */
+    .search-bar__autocomplete .ui-autocomplete, .wikipedia
+    {
+        border: 1px solid @secondary-color !important;
+    }
+    
+    /* Liens et textes */
+    a, p, small, .main-content .lilo-search .lilo__search-form .form-search .form-control,  .main-content .lilo-search .lilo__search-form .form-search .form-control::placeholder, .dropdown-menu, .news span, .resultthumbnail, .main-content .navbar-search .form-search .form-control, #lilo-search::placeholder
+    {
+        color: @text !important;
+        opacity: 1;
+    }
+    
+    /* Liens quand passage curseur */
+    .main-footer .footer-items a:hover, a:hover
+    {
+        color: @links_special_state !important;
+    }
+    
+    
+    
+    
+    
+    /* ========= */
+    /* RECHERCHE */
+    /* ========= */
+    
+    /* Bordure header */
+    header .navbar
+    {
+        border-bottom: 1px solid @secondary-color !important;
+    }
+    
+    /* Bordure form input */
+    .main-content .navbar-search .form-search .form-control, #lilo-search
+    {
+        border: 1px solid @primary-color;
+    }
+    
+    /* Numéros résultat */
+    #pages a
+    {
+        color: #036dc0 !important;
+    }
+    
+    /* Vidéos */
+    .card
+    {
+        background-color: @primary-color;
+    }
+    
+    .result a:visited
+    {
+        color: @links_special_state !important;
+        text-decoration: underline !important;
+    }
+    
+    
+    
+    
+    
+    /* ====== */
+    /* OMBRES */
+    /* ====== */
+    
+    /* Ombres principales */
+    .main-header #drop-menu, .main-content .lilo-block--shadow, .main-content .lilo-news .news-item:hover
+    {
+        -webkit-box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Ombre Wikipédia */
+    .wikipedia
+    {
+        box-shadow: 1px 1px 3px @primary-color;   
+    }
+    
+    
+    
+    
+    
+    /* ============ */
+    /* PIED DE PAGE */
+    /* ============ */
+    
+    /* Logo Apple */
+    .main-footer .footer__links--social .list-group-item:nth-child(2) a img
+    {
+        filter: invert(100%);
+    }
+}
