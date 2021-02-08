@@ -8,4 +8,4 @@ First of all you will need to install Stylus for your web browser :
 [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
 
 Then follow this link :  
-[Install the custom CSS](https://github.com/KeetKhat/Lilo-Dark/raw/main/lilo-dark.user.css)
+[Install the custom CSS](https://github.com/KeetKhat/Lilo-Dark/raw/master/lilo-dark.user.css)
