@@ -1,5 +1,5 @@
 # Lilo-Dark
-An awesome dark mode for Lilo Search  
+An awesome dark mode for [Lilo Search](https://search.lilo.org/)  
 This theme is still in beta, some elements may not be displayed like it was intended  
 Feel free to open an [issue](https://github.com/KeetKhat/Lilo-Dark/issues) if something is wrong
 
